@@ -108,6 +108,9 @@ export default function CreateStudentPage() {
           <Link href="/students" className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
             Cancel
           </Link>
+          <Link href="/" className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 ml-4">
+            Back to Home
+          </Link>
         </div>
       </form>
     </main>

@@ -28,6 +28,9 @@ export default async function BooksPage() {
       <Link href="/books/create" className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition-colors">
         Add New Book
       </Link>
+      <Link href="/" className="mb-4 px-4 py-2 bg-gray-500 text-white rounded-lg shadow-md hover:bg-gray-600 transition-colors">
+        Back to Home
+      </Link>
       <div className="w-full max-w-4xl">
         {books.length === 0 ? (
           <p>No books found.</p>

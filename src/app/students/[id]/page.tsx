@@ -242,6 +242,9 @@ export default function StudentDetailsPage({ params }: { params: Promise<{ id: s
               <Link href="/students" className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
                 Back to Students
               </Link>
+              <Link href="/" className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800 ml-4">
+                Back to Home
+              </Link>
             </div>
           </div>
         )}

@@ -84,3 +84,13 @@ This document lists the concrete, actionable rules and conventions for this proj
 *   **Implications:**
     *   Always run `npx prisma generate` after `npm install` (or equivalent package manager install command) and after any modifications to `prisma/schema.prisma`.
     *   Integrate `prisma generate` into the build process or pre-build scripts to automate this step.
+
+---
+
+### Decision: Centralized Navigation Component
+
+*   **Reason:** To ensure consistent navigation across all user-facing pages, improve maintainability, and reduce redundant code. The current decentralized approach leads to inconsistencies and makes it harder to update navigation globally.
+*   **Implications:**
+    *   A shared navigation component (e.g., a header or sidebar) should be created and included in the `RootLayout` (`src/app/layout.tsx`) or in nested layouts for specific sections.
+    *   All primary navigation links, including "Back to Home," should be managed within this centralized component.
+    *   Individual pages should avoid implementing their own "Back to Home" links if a global solution is in place.
